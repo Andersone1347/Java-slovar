@@ -1,6 +1,54 @@
 # Java-slovar
 
+*return* - используют для выполнения явного выхода из метода. Оператор можно использовать в любом месте метода для возврата управления тому объекту, который вызвал данный метод. Таким образом, **return** прекращает выполнение метода, в котором он находится.
+```
+
+```
+
+
+
+
+Терминология на примере.
+*1*
+```
+public class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        person1.name = "валера";
+        person1.age = 50;
+        person1.speak();
+        Person person2 = new Person();
+        person2.name = "vova";
+        person2.age = 20;
+        person1.sayHello();
+    }
+}
+class Person {
+    String name;
+    int age;
+    void speak() {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Меня зовут " + name + " Мне " + age + " лет");
+        }
+    }
+    void sayHello() {
+        System.out.println("Привет! ");
+    }
+}
+//Меня зовут валера Мне 50 лет
+//Меня зовут валера Мне 50 лет
+//Меня зовут валера Мне 50 лет
+//Привет! 
+```
+*speak(),void sayHello()* - Свой метод.  *()* -  Параметры метода     
+*System.out.println("Привет! ")* - Вывод.   
+*class Person{}* - класс.   
+*Person person1 = new Person();*  *person1* - Объект класса Person.
+class Person {*String name*; *int age*;} - Поля.
+*void* - (это тип данных)Ключевое слово **void** указывает на то, что метод ничего не возвращает. Затем идут название метода - **main** и в скобках параметры метода - **String [] args**. И в фигурные скобки заключено тело метода - все действия, которые он выполняет.
 ### Методы
+
+
 
 # contains() – это метод Java, позволяющий проверить, содержит ли String другую подстроку или нет.
 ```
