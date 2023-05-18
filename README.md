@@ -597,3 +597,7 @@ x *= y;    // То же самое, что и x = x * y;
 x /= y;    // То же самое, что и x = x / y;
 x %= y;    // То же самое, что и x = x % y;
 ```
+
+# System.out.format
+
+Пример: [!alt](https://javarush.com/groups/posts/1412-formatiruem-vihvod-chisel-v-java)
